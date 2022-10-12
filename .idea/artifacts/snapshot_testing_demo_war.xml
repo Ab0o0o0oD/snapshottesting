@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="snapshot-testing-demo:war">
+    <output-path>$PROJECT_DIR$/snapshot-testing-demo/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>snapshot-testing-demo</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="snapshot-testing-demo-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="snapshot-testing-demo:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: no.gjensidige.gpf:gpf-snapshot-testing:test-jar:tests:16.12.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/no/gjensidige/gpf/gpf-snapshot-testing/16.12.0/gpf-snapshot-testing-16.12.0-tests.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/no/gjensidige/gpf/gpf-snapshot-testing/16.12.0/gpf-snapshot-testing-16.12.0-test-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/no/gjensidige/gpf/gpf-snapshot-testing/16.12.0/gpf-snapshot-testing-16.12.0-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

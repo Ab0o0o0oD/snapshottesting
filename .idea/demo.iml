@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="5" platform="JVM 11" allPlatforms="JVM [11]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-java-parameters" />
+        </compilerSettings>
+        <compilerArguments>
+          <stringArguments>
+            <stringArg name="jvmTarget" arg="11" />
+            <stringArg name="apiVersion" arg="1.6" />
+            <stringArg name="languageVersion" arg="1.6" />
+          </stringArguments>
+          <arrayArguments>
+            <arrayArg name="pluginClasspaths">
+              <args>$APPLICATION_HOME_DIR$/plugins/Kotlin/kotlinc/lib/allopen-compiler-plugin.jar</args>
+            </arrayArg>
+            <arrayArg name="pluginOptions">
+              <args>
+                <arg>plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.stereotype.Component</arg>
+                <arg>plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.transaction.annotation.Transactional</arg>
+                <arg>plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.scheduling.annotation.Async</arg>
+                <arg>plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.cache.annotation.Cacheable</arg>
+                <arg>plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.boot.test.context.SpringBootTest</arg>
+                <arg>plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.validation.annotation.Validated</arg>
+              </args>
+            </arrayArg>
+          </arrayArguments>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>no.gjensidige.gpf</groupId>
+        <artifactId>gpf-parent-spring-boot-2</artifactId>
+        <version>2.7.0-20220531.1421-cff42db009eb</version>
+    </parent>
+
+    <artifactId>demo</artifactId>
+    <name>demo</name>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <maven-deploy.skip>false</maven-deploy.skip>
+        <java.version>11</java.version>
+        <gpf-biblioteker.version>16.12.0</gpf-biblioteker.version>
+        <kotlinx-serialization.version>1.3.3</kotlinx-serialization.version>
+        <kotlinsnapshot.version>2.3.0</kotlinsnapshot.version>
+        <mockserver-netty.version>5.13.2</mockserver-netty.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>no.gjensidige.gpf</groupId>
+                <artifactId>gpf-biblioteker</artifactId>
+                <version>${gpf-biblioteker.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.mock-server</groupId>
+                <artifactId>mockserver-junit-jupiter</artifactId>
+                <version>${mockserver-netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jetbrains.kotlinx</groupId>
+                <artifactId>kotlinx-serialization-json</artifactId>
+                <version>${kotlinx-serialization.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.karumi.kotlinsnapshot</groupId>
+                <artifactId>core</artifactId>
+                <version>${kotlinsnapshot.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+    <modules>
+    <module>snapshot-testing-demo</module>
+</modules>
+
+
+    <repositories>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/gjensidige/*</url>
+        </repository>
+    </repositories>
+
+</project>
